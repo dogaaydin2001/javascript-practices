@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Number Guessing Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>I am thinking of a number betweeen 1-100</h3>
+      <h3>Can you guess it</h3>
+      <input type="text" placeholder="Num" id="guess" /><br />
+      <button onclick="play()" id="my_btn">GUESS</button>
+      <p id="message1">Number of guesses: 0</p>
+      <p id="message2">Guessed numbers are: None</p>
+      <p id="messag3"></p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
