@@ -1,0 +1,75 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #61d954, #2ebf75);
+}
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  width: 50%;
+  min-width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 5px;
+  font-family: "Poppins,sans-serif";
+  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.15);
+}
+.row {
+  /* Flex, HTML elementlerini ve çocuklarını birbirlerine karşı dinamik olarak ilgili şekilde yerleştirmek için kullanılan bir görünüm modelidir.
+     Flex, kutu modeli ile karşılaştırıldığında, HTML elementleri ve çocuklarını daha esnek bir şekilde yerleştirmeye olanak sağlar. */
+  display: flex;
+  /* Align-items, bir flex kapsayıcının içindeki çocukların dikey olarak nasıl hizalandığını belirler. 
+    center değeri, çocukların kapsayıcının ortasına hizalanmasına izin verir. */
+  align-items: center;
+  /* Justify-content: space-between;, bir CSS özelliğidir ve düzenli bir layout oluşturmak için kullanılır. 
+    Bu özellik, öğelerin iki uç arasında eşit bir aralıkta dağıtılmasını sağlar. Öğelerin her birinin, diğer öğelerden uzaklaştıkça daha büyük bir boşlukta konumlandırılmasını sağlar. */
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.row span {
+  /* Font-weight, bir yazı tipinin kalınlığını belirleyen bir özelliktir. 
+    Fontlar genellikle 400'den 3000'e kadar değişen bir font-weight'e sahiptir ve daha kalın fontlar daha fazla dikkat çeker. Font-weight, metinleri daha dikkat çekici hale getirmek ve kullanıcı deneyimini geliştirmek için kullanılır. */
+  font-weight: 500;
+}
+input[type="range"] {
+  width: 70%;
+  height: 3.5px;
+  /* WebKit-Görünümü, web geliştiricilerinin bir web sayfasının görünümünü düzenlemek için kullanabilecekleri bir CSS özelliğidir. CSS özelliği, bir elementin görünümünün nasıl olacağını belirlemek için kullanılır ve arayüz elemanlarının nasıl görüneceğini düzenler.
+     Görünüm, arayüz elemanlarının yüksekliği, genişliği, arka plan rengi, kenarlıkları ve diğer özellikleri dahil olmak üzere özelleştirmeyi sağlar. */
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #dcdcdc;
+  border-radius: 3px;
+  outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 15px;
+  width: 15px;
+  background-color: #1c1c1c;
+  border-radius: 50%;
+  /* Cursor (fare imleci) pointer, kullanıcının bir öğeye tıklamak için imlecinin bir öğe üzerine gelmesi anlamına gelir. 
+    Bir web sayfasında, fare imlecinin bir öğeye gelmesi bir kullanıcının bu öğeye tıklayabileceğini gösterir. */
+  cursor: pointer;
+}
+#result {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-align: center;
+  color: #0be881;
+}
+#category {
+  font-size: 18px;
+  text-align: center;
+  letter-spacing: 1px;
+}
